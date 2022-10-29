@@ -4,7 +4,8 @@
 local midiParser = function( _path )
 
     local ret = {}
-  
+    local event = {}
+
     ------------------
     -- prepare file --
     ------------------
