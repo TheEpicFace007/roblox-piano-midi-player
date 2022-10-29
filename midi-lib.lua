@@ -11,7 +11,7 @@ local midiParser = function( _path )
     ------------------
   
     if _path == nil then
-      error( 'path is not defined' )
+      error( 'path is not defined``' )
     end
   
     local midi = readfile( _path )
@@ -261,7 +261,7 @@ local midiParser = function( _path )
               table.insert( track.messages, {
                 time = deltaTime,
                 type = 'meta',
-                meta = 'Unknown Text: ' .. event[ 2 ],
+                meta = 'Unknown Text: ' .. text,
                 text = text
               } )
   
