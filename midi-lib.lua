@@ -261,7 +261,7 @@ local midiParser = function( _path )
               table.insert( track.messages, {
                 time = deltaTime,
                 type = 'meta',
-                meta = 'Unknown Text: ' .. text,
+                meta = 'Unknown Text: ',
                 text = text
               } )
   
